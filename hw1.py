@@ -55,7 +55,3 @@ def what_is(what):
 
 
 what_is(input("Enter data: "))
-
-
-
-
