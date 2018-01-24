@@ -29,6 +29,8 @@ def is_email(email):
 
 def is_date(date):
     numbers = date.split('/')
+    if len(numbers) != 3:
+        return False
     if not numbers[0].isdigit() or len(numbers[0]) != 4:
         return False
     if not numbers[1].isdigit() or len(numbers[1]) != 2 or int(numbers[1]) < 0 or int(numbers[1]) > 12:
